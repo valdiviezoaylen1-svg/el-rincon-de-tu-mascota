@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎄 EL RINCÓN DE TU MASCOTA</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="strip.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🐾 EL RINCÓN DE TU MASCOTA</h1>
+    <p>Tu guía solidaria para cuidar y adoptar mascotas en Jujuy</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('inicio')">Inicio</button>
+    <button onclick="mostrarSeccion('adopciones')">Adopciones</button>
+    <button onclick="mostrarSeccion('vacunas')">Vacunas</button>
+    <button onclick="mostrarSeccion('veterinarias')">Veterinarias</button>
+    <button onclick="mostrarSeccion('cuidados')">Cuidados</button>
+    <button onclick="mostrarSeccion('contacto')">Contacto</button>
+    <button onclick="mostrarSeccion('registro-mascotas')">Registro</button>
+    <button onclick="mostrarSeccion('derechos')">Derechos</button>
+  </nav>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="visible">
+      <h2>🎁 Bienvenidos</h2>
+      <p>En “EL RINCÓN DE TU MASCOTA” trabajamos por el bienestar animal en Jujuy. Informate, adoptá, vacuná y ayudá a cambiar vidas 💕.</p>
+      <img src="./Cartel_Logo_circular_bienes_raices_simple_blanco_y_negro_20251113_001049_0000__4_-removebg-preview.png" alt="Animales felices" class="banner">
+    </section>
+
+    <!-- ADOPCIONES -->
+    <section id="adopciones" class="oculto">
+      <h3>🐾 Adopciones</h3>
+      <p>Conocé a nuestros peludos en busca de hogar:</p>
+
+      <div class="galeria-adopciones">
+        <div class="tarjeta">
+          <img src="./Screenshot_20250619-093927.png" alt="adotemos">
+          <h3></h3>
+          <p>📍 Alto Comedero</p>
+          <button>❤️ Adoptar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./IMG-20250615-WA0030 (1).jpg" alt="adopciones">
+          <h3></h3>
+          <p>📍 San Salvador Centro</p>
+          <button>❤️ Adoptar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VACUNAS -->
+    <section id="vacunas" class="oculto">
+      <h2>💉 Vacunas</h2>
+
+      <h3>🐶 Perros</h3>
+      <table>
+        <tr><th>Edad</th><th>Vacunas</th></tr>
+        <tr><td>45 días</td><td>Moquillo, Parvovirus</td></tr>
+        <tr><td>2 meses</td><td>Refuerzo</td></tr>
+        <tr><td>3 meses</td><td>Polivalente</td></tr>
+        <tr><td>4 meses</td><td>Antirrábica</td></tr>
+        <tr><td>Anual</td><td>Refuerzo general</td></tr>
+      </table>
+
+      <h3>🐱 Gatos</h3>
+      <table>
+        <tr><th>Edad</th><th>Vacunas</th></tr>
+        <tr><td>45 días</td><td>Triple felina</td></tr>
+        <tr><td>2 meses</td><td>Refuerzo</td></tr>
+        <tr><td>3 meses</td><td>Leucemia felina</td></tr>
+        <tr><td>4 meses</td><td>Rabia</td></tr>
+        <tr><td>Anual</td><td>Refuerzo general</td></tr>
+      </table>
+
+      <h3>📌 ¿Por qué es importante castrar?</h3>
+      <a href="calendario_vacunacion.pdf" class="boton-descarga">📎 Descargar calendario anual</a>
+      <img src="./cas.jpg" alt="Castración">
+    </section>
+
+    <!-- VETERINARIAS -->
+    <section id="veterinarias" class="oculto">
+      <h2>🏥 Veterinarias Gratuitas</h2>
+
+      <div class="vet">
+        <h3>🐾 Centro Modelo de Zoonosis N°2 – Alto Comedero</h3>
+        <p>📍 Barrio Alto Comedero, San Salvador de Jujuy</p>
+        <p>🏥 Vacunación, castración y desparasitación gratuita</p>
+        <p>🕓 Lunes a viernes de 8 a 13 hs</p>
+      </div>
+      <img src="./zoonisi.jpg" alt="Zoonosis">
+      <img src="./vete3.jpg" alt="Veterinaria">
+
+      <div class="vet">
+        <h3>🐾 Hospital Público de Mascotas – Coronel Arias</h3>
+        <p>📍 San Salvador de Jujuy</p>
+        <p>🏥 Consultas, cirugías y atención primaria</p>
+        <p>🕓 Lunes a viernes de 8 a 13 hs</p>
+      </div>
+      <img src="./vete centro.webp" alt="Hospital de mascotas">
+    </section>
+
+    <!-- DERECHOS -->
+    <section id="derechos" class="oculto">
+      <h2>📜 Derechos de los Animales y Ley de Protección</h2>
+
+      <p>La protección animal garantiza un trato digno y libre de sufrimiento. En Argentina existen leyes que protegen a todas las especies.</p>
+
+      <h3>🐾 Derechos Fundamentales</h3>
+      <ul>
+        <li>✨ Derecho a la vida y a no sufrir crueldad.</li>
+        <li>🥣 Derecho a recibir alimento y agua.</li>
+        <li>🏡 Derecho a vivir en un ambiente seguro.</li>
+        <li>💉 Derecho a recibir atención veterinaria.</li>
+        <li>🚫 Derecho a no ser abandonados.</li>
+      </ul>
+
+      <h3>⚖️ Ley 14.346 – Malos Tratos y Actos de Crueldad</h3>
+      <ul>
+        <li>❌ Golpear o maltratar animales.</li>
+        <li>❌ Abandonarlos.</li>
+        <li>❌ Provocar dolor innecesario.</li>
+      </ul>
+    </section>
+
+    <!-- CUIDADOS -->
+    <section id="cuidados" class="oculto">
+      <h2>🧼 Cuidados y Recomendaciones</h2>
+      <ul>
+        <li>🐕 Alimentación balanceada según edad y tamaño</li>
+        <li>✂️ Higiene y baño responsable</li>
+        <li>💊 Desparasitación cada 3 meses</li>
+        <li>🏡 Adaptación al hogar</li>
+        <li>🧡 Prevención de pulgas y garrapatas</li>
+      </ul>
+    </section>
+
+    <!-- REGISTRO DE MASCOTAS -->
+    <section id="registro-mascotas" class="oculto" style="margin-top:20px;">
+      <h1>Registro de Mascotas</h1>
+      <p class="small">Ingresa los datos de la mascota (se guardan en el navegador).</p>
+
+      <div class="card">
+        <form id="formMascota">
+          <div>
+            <label for="nombre">Nombre (opcional)</label>
+            <input type="text" id="nombre" placeholder="Ej: Coco">
+          </div>
+
+          <div>
+            <label for="raza">Raza</label>
+            <input type="text" id="raza" required placeholder="Ej: Labrador">
+          </div>
+
+          <div>
+            <label for="edad">Edad (años)</label>
+            <input type="number" id="edad" min="0" step="0.1" placeholder="Ej: 2.5">
+          </div>
+
+          <div>
+            <label for="tamano">Tamaño</label>
+            <select id="tamano">
+              <option value="Pequeño">Pequeño</option>
+              <option value="Mediano">Mediano</option>
+              <option value="Grande">Grande</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" min="0" step="0.1" placeholder="Ej: 7.5">
+          </div>
+
+          <div>
+            <label for="fechaNac">Fecha de nacimiento (aprox.)</label>
+            <input type="date" id="fechaNac" max="2100-12-31">
+          </div>
+          <!-- CRONOGRAMA VACUNAL -->
+<div>
+  <label for="ultimaVacuna">Última vacuna aplicada</label>
+  <select id="ultimaVacuna">
+    <option value="">-- Seleccionar --</option>
+    <option value="45d">45 días</option>
+    <option value="2m">2 meses</option>
+    <option value="3m">3 meses</option>
+    <option value="4m">4 meses</option>
+    <option value="anual">Anual</option>
+  </select>
+</div>
+
+<div>
+  <label>Siguiente vacuna que le corresponde:</label>
+  <p id="proximaVacuna" class="small" style="font-weight:bold; color:#007bff;">
+    Selecciona la última vacuna...
+  </p>
+</div>
+
+
+          <div style="align-self:center">
+            <label for="castrado">¿Está castrado?</label>
+            <div class="actions">
+              <input type="checkbox" id="castrado">
+              <span class="small" style="margin-left:6px">Marcar si sí</span>
+            </div>
+          </div>
+
+          <input type="hidden" id="editIndex" value="-1">
+
+          <div class="wide actions">
+            <button type="submit" class="primary">Guardar mascota</button>
+            <button type="button" id="limpiar" class="muted">Limpiar formulario</button>
+            <button type="button" id="borrarTodo" class="danger">Borrar todos</button>
+          </div>
+        </form>
+
+        <div id="lista" style="margin-top:14px"></div>
+      </div>
+
+      <script>
+        const LS_KEY = 'mascotas_registro_v1'
+
+        function cargarMascotas(){
+          try{
+            const raw = localStorage.getItem(LS_KEY)
+            return raw ? JSON.parse(raw) : []
+          }catch(e){return []}
+        }
+
+        function guardarMascotas(arr){ localStorage.setItem(LS_KEY, JSON.stringify(arr)) }
+
+        function calcularEdadDesdeFecha(fechaStr){
+          if(!fechaStr) return null
+          const hoy = new Date()
+          const nac = new Date(fechaStr)
+          let anos = hoy.getFullYear() - nac.getFullYear()
+          const m = hoy.getMonth() - nac.getMonth()
+          if(m < 0 || (m===0 && hoy.getDate() < nac.getDate())) anos--
+          return anos >= 0 ? anos : 0
+        }
+
+        function renderLista(){
+          const list = cargarMascotas()
+          if(list.length === 0){
+            document.getElementById('lista').innerHTML = '<p class="small">No hay mascotas registradas.</p>'
+            return
+          }
+
+          let html = `<table><thead><tr>
+            <th>Nombre</th><th>Raza</th><th>Edad</th><th>Tamaño</th><th>Peso</th><th>Fecha nac.</th><th>Castrado</th><th>Acciones</th>
+          </tr></thead><tbody>`
+
+          list.forEach((m,i)=>{
+            const edadDisplay = (m.edad!=='') ? m.edad + ' años' : (m.fechaNac ? calcularEdadDesdeFecha(m.fechaNac)+' años' : '-')
+            html += `<tr>
+              <td>${m.nombre||'-'}</td>
+              <td>${m.raza}</td>
+              <td>${edadDisplay}</td>
+              <td>${m.tamano}</td>
+              <td>${m.peso||'-'}</td>
+              <td>${m.fechaNac||'-'}</td>
+              <td>${m.castrado?'Sí':'No'}</td>
+              <td>
+                <button onclick="editar(${i})">Editar</button>
+                <button onclick="eliminar(${i})" style="margin-left:6px">Eliminar</button>
+              </td>
+            </tr>`
+          })
+
+          html += '</tbody></table>'
+          document.getElementById('lista').innerHTML = html
+        }
+
+        const form = document.getElementById('formMascota')
+        form.addEventListener('submit',function(e){
+          e.preventDefault()
+          const nombre = document.getElementById('nombre').value.trim()
+          const raza = document.getElementById('raza').value.trim()
+          const edadRaw = document.getElementById('edad').value
+          const tamano = document.getElementById('tamano').value
+          const peso = document.getElementById('peso').value
+          const fechaNac = document.getElementById('fechaNac').value
+          const castrado = document.getElementById('castrado').checked
+          const editIndex = parseInt(document.getElementById('editIndex').value,10)
+
+          if(!raza){alert('La raza es obligatoria.');return}
+
+          let edad = edadRaw
+          if((edad===''||edad===null)&&fechaNac){edad = calcularEdadDesdeFecha(fechaNac)}
+
+          const nueva = {nombre, raza, edad, tamano, peso, fechaNac, castrado}
+          const arr = cargarMascotas()
+
+          if(editIndex>=0){arr[editIndex]=nueva} else {arr.push(nueva)}
+          guardarMascotas(arr)
+          limpiarFormulario()
+          renderLista()
+        })
+
+        document.getElementById('limpiar').addEventListener('click',limpiarFormulario)
+        document.getElementById('borrarTodo').addEventListener('click',function(){
+          if(!confirm('¿Borrar todos los registros?'))return
+          localStorage.removeItem(LS_KEY)
+          renderLista()
+        })
+
+        function limpiarFormulario(){form.reset();document.getElementById('editIndex').value=-1}
+
+        function editar(i){
+          const arr = cargarMascotas()
+          const m = arr[i]
+          document.getElementById('nombre').value = m.nombre||''
+          document.getElementById('raza').value = m.raza
+          document.getElementById('edad').value = m.edad||''
+          document.getElementById('tamano').value = m.tamano
+          document.getElementById('peso').value = m.peso||''
+          document.getElementById('fechaNac').value = m.fechaNac||''
+          document.getElementById('castrado').checked = m.castrado
+          document.getElementById('editIndex').value = i
+        }
+
+        function eliminar(i){
+          if(!confirm('¿Eliminar este registro?'))return
+          const arr=cargarMascotas();arr.splice(i,1);guardarMascotas(arr);renderLista()
+        }
+
+        renderLista()
+      </script>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="oculto">
+      <h2>💌 Contacto y Colaboración</h2>
+      <form class="formulario">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email o teléfono" required>
+        <textarea placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>📍 Redes: <strong>Facebook – Instagram – WhatsApp</strong></p>
+      <p>🤝 Colaboramos con la Asociación Amigos del Animal</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🎅 © 2025 EL RINCÓN DE TU MASCOTA - San Salvador de Jujuy 🎄</p>
+  </footer>
+</body>
+</html>
